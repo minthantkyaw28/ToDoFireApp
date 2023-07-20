@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		463C5B812A69098300E44F3B /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 463C5B802A69098300E44F3B /* .gitignore */; };
 		469B19172A67D5EC0029E01E /* ChangePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469B19162A67D5EC0029E01E /* ChangePasswordView.swift */; };
 		469B19192A67D90C0029E01E /* ChangePasswordViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469B19182A67D90C0029E01E /* ChangePasswordViewViewModel.swift */; };
 		46CD685B2A6661E8002E55BB /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46CD685A2A6661E8002E55BB /* Launch Screen.storyboard */; };
@@ -39,6 +40,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		463C5B802A69098300E44F3B /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		469B19162A67D5EC0029E01E /* ChangePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordView.swift; sourceTree = "<group>"; };
 		469B19182A67D90C0029E01E /* ChangePasswordViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewViewModel.swift; sourceTree = "<group>"; };
 		46CD685A2A6661E8002E55BB /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 		46D169E52A61347F00739DFF = {
 			isa = PBXGroup;
 			children = (
+				463C5B802A69098300E44F3B /* .gitignore */,
 				46D169F02A61347F00739DFF /* todofire */,
 				46D169EF2A61347F00739DFF /* Products */,
 			);
@@ -245,6 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				463C5B812A69098300E44F3B /* .gitignore in Resources */,
 				46D169F92A61348200739DFF /* Preview Assets.xcassets in Resources */,
 				46D169F62A61348200739DFF /* Assets.xcassets in Resources */,
 				46CD685B2A6661E8002E55BB /* Launch Screen.storyboard in Resources */,
