@@ -24,9 +24,12 @@ struct ChangePasswordView: View {
             Form{
                 //new password
                 SecureField("New Password",text:$ViewModel.password)
+                
+                //confirm password
+                SecureField("Confirm Password",text:$ViewModel.confirmPassword)
 
                 
-                //Button
+                //Change Password Button
                 TLButtton(title: "Save", backgroud: .pink){
                     if ViewModel.canSave {
                         ViewModel.changePassword()

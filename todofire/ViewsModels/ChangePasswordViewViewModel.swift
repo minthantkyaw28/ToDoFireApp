@@ -14,25 +14,16 @@ class ChangePasswwordViewViewModel : ObservableObject {
     @Published var showAlert = false
     
     @Published var password : String = ""
-//    @Published var newPassword : String = ""
-//    @Published var oldPasswordFromUser : String = ""
-//    @Published var oldPasswordFromServer : String = ""
+    @Published var confirmPassword : String = ""
+
     
-    //data validate
+    //password change func
     func changePassword(){
-        guard canSave else{
-            return
-        }
-        
         //fetch user data and change password and logout
         Auth.auth().currentUser?.updatePassword(to: password) { error in
-            self.logout()
+            self.logout() //log out after password changes
         }
     }
-    
-  
-    
-   
     
     //log out
     func logout(){
@@ -43,26 +34,21 @@ class ChangePasswwordViewViewModel : ObservableObject {
         }
     }
     
-    //check if old password is match with user provided old password
-//    func checkOldPassword(){
-//        Auth.auth().currentUser?.
-//    }
-    
-    
     //validate password data
     var canSave: Bool{
         guard !password.trimmingCharacters (in: .whitespaces).isEmpty else {
             return false
         }
         
-//        guard !newPassword.trimmingCharacters (in: .whitespaces).isEmpty else {
-//            return false
-//        }
-//
-//        guard !oldPassword.trimmingCharacters (in: .whitespaces).isEmpty else {
-//            return false
-//        }
-        
+        guard !confirmPassword.trimmingCharacters (in: .whitespaces).isEmpty else {
+            return false
+        }
+     
+        guard password == confirmPassword else{
+            showAlert=true
+            return false
+        }
+
         return true
     }
     
